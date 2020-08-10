@@ -1,0 +1,18 @@
+#ifndef __TREE__H__
+#define __TREE__H__
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct s_tree t_tree;
+
+struct s_tree {
+    int data;
+    t_tree *tleft;
+    t_tree *tright;
+};
+
+t_tree* binary_tree(t_tree **tree, int data);
+void print_to(t_tree *tree, int key);
+
+#endif
